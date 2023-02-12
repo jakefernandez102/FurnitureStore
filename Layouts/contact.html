@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+            rel="stylesheet">
+
+        <title> | Furniture Store | Jake Fernandez</title>
+
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+
+    </head>
+
+    <body>
+        <header class="header">
+
+            <h1>Furniture <span> Store</span></h1>
+            <h3>| Jake Fernandez |</h3>
+
+        </header>
+        <!-- nav -->
+        <div class="contenedor-nav ">
+            <nav class="nav contenedor">
+                <a href="../index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="products.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="galery.html">Galery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+
+
+
+        <!-- listado de productos -->
+        <main class="main-content contenedor">
+            <h2 class="text-center">Contact <span> Us</span></h2>
+
+            <form class="contact-form " action="#">
+
+                <fieldset class="flst">
+
+                    <legend class="lgnd">Your info</legend>
+                        
+                        <div class="campo">
+                            <label for="#nombre">Name:</label>
+                            <input required id="nombre" type="text" placeholder="Your Name">
+                        </div>
+
+                        <div class="campo">
+                            <label for="#asunto">Subject:</label>
+                            <input required id="asunto" type="text" placeholder="The Subject">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="#email">Email:</label>
+                            <input required id="email" type="email" placeholder="Your Email">
+                        </div>
+
+                        <div class="campo">
+                            <label for="#telefono">Phone number:</label>
+                            <input required id="telefono" type="tel" placeholder="Your Phone Number">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="#mensaje">Message :</label>
+                            <textarea required name="mensaje" id="mensaje" cols="20" rows="10" placeholder="Your Message"></textarea>
+                        </div>
+                </fieldset>
+
+                <fieldset class="flst">
+                    <legend class="lgnd">Country</legend>
+
+                    <div class="campo">
+                        <label for="#pais">Country:</label>
+                        <select name="pais" id="pais">
+                            <option value="" selected disabled>-- Select --</option>
+                            <option value="COL">Colombia</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="MX">Mexico</option>
+                            <option value="PR">Peru</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="flst">
+                    <legend class="lgnd">Extra Info</legend>
+
+                    <div class="campo">
+                        <label for="client">Customer</label>
+                        <input type="radio" name="tipo" id="client" value="customer">
+                    </div>
+                    <div class="campo">
+                        <label for="proveedor">Provider</label>
+                        <input type="radio" name="tipo" id="provier" value="provider">
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Category of Interest</label>
+                        <input list="categorias" name="categorias" id="categoria">
+                        <datalist id="categorias">
+                            <option value="Kitchen">
+                            <option value="Restroom">
+                            <option value="Office">
+                            <option value="Television room">
+                            <option value="Outside">
+                        </datalist>
+                    </div>
+                </fieldset>
+
+                <input class="btn" type="submit" value="Submit">
+            </form>
+
+        </main>
+        <!-- end listado de productos -->
+
+
+
+        <footer class="footer ">
+            <!-- Nav1 Footer -->
+            <div class="footer-grid contenedor">
+
+                <div class="footer-list">
+                    <h3>Category</h3>
+                    <nav>
+                        <a href="">Cocina</a>
+                        <a href="">Oficina</a>
+                        <a href="">Jardin</a>
+                        <a href="">Cochera</a>
+                        <a href="">Dormitorios</a>
+                    </nav>
+                </div>
+                <!-- end nav1 footer -->
+
+                <!-- Nav1 Footer -->
+                <div class="footer-list">
+                    <h3>About Us</h3>
+                    <nav>
+                        <a href="">Cocina</a>
+                        <a href="">Oficina</a>
+                        <a href="">Jardin</a>
+                        <a href="">Cochera</a>
+                        <a href="">Dormitorios</a>
+                    </nav>
+                </div>
+                <!-- end nav1 footer -->
+                <!-- Nav1 Footer -->
+                <div class="footer-list">
+                    <h3>Support</h3>
+                    <nav>
+                        <a href="">Frequent Questions</a>
+                        <a href="">Online Help</a>
+                        <a href="">Confianza y seguridad</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- end nav1 footer -->
+
+            <p class="copyright">All Rights Reserved | FurnitureStore | By JakeFernandez</p>
+        </footer>
+
+
+    </body>
+
+</html>
