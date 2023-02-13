@@ -80,6 +80,13 @@ span {
       cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+      .btn {
+            width: 95%;
+            margin: 0 auto;
+      }
+}
+
 /* endutilities */
 
 /* css heaader */
@@ -343,9 +350,11 @@ span {
             display: flex;
             flex-direction: column;
       }
-      .product-list:last-of-type{
-            margin:0 ;
+
+      .product-list:last-of-type {
+            margin: 0;
       }
+
       .product-list .p1 {
             display: flex;
             flex-direction: column;
@@ -456,7 +465,7 @@ span {
 
 .info-text-blog p {
       font-weight: 700;
-      
+
 }
 
 .btn-blog {
@@ -495,7 +504,8 @@ span {
             max-width: 90%;
             margin: 0 auto;
       }
-      .parrafo-blog{
+
+      .parrafo-blog {
             text-align: justify;
             max-width: 90%;
             margin: 0 auto;
