@@ -120,6 +120,19 @@ span {
       color: black;
 }
 
+@media screen and (max-width: 768px) {
+      .contenedor-nav .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .nav a {
+            font-size: 1.5rem;
+      }
+
+}
+
 /* end css nav */
 
 /* hero */
@@ -151,6 +164,7 @@ span {
       margin: 0 auto;
 }
 
+
 .div-grid .prod {
       text-align: center;
 }
@@ -168,6 +182,27 @@ span {
       background-color: var(--color_title);
       color: white;
       border-bottom-right-radius: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+      .div-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+      }
+
+      .product-list {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .prd:nth-child(1) {
+            grid-template-columns: none;
+
+      }
+
+
+
 }
 
 /* endcss section prod cat */
@@ -188,12 +223,34 @@ span {
 .us-text {
       grid-column: 2/3;
       color: white;
+      text-align: justify;
 }
 
 .about-us-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 8rem;
+}
+
+@media screen and (max-width:768px) {
+      .about-us {
+            background-image: linear-gradient(to bottom, transparent 50%, var(--color_title) 50%, var(--color_title) 100%), url(../img/Imagenes/nosotros.jpg);
+            margin: 5rem 0;
+            background-position: center, left center;
+            background-size: 100%, 90rem;
+      }
+
+      .about-us-grid {
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+
+      }
+
+      .us-text {
+            grid-row: 2 / 3;
+
+      }
 }
 
 /* end css section about us */
@@ -280,6 +337,27 @@ span {
       grid-column: 5/7;
 }
 
+@media screen and (max-width: 768px) {
+
+      .product-list {
+            display: flex;
+            flex-direction: column;
+      }
+      .product-list:last-of-type{
+            margin:0 ;
+      }
+      .product-list .p1 {
+            display: flex;
+            flex-direction: column;
+
+      }
+
+      .p1 img {
+            display: block;
+      }
+
+}
+
 /* end css main */
 
 /* css footer */
@@ -341,6 +419,15 @@ span {
       }
 }
 
+@media screen and (max-width: 768px) {
+
+      .maingrid {
+            display: flex;
+            flex-direction: column;
+      }
+
+}
+
 /* end Main about us */
 
 /* blog */
@@ -366,8 +453,10 @@ span {
 
 }
 
+
 .info-text-blog p {
       font-weight: 700;
+      
 }
 
 .btn-blog {
@@ -394,7 +483,7 @@ span {
 
       .info-text-blog {
             flex-direction: column;
-            margin: 0;
+            margin-left: 4.5%;
       }
 
       .info-text-blog p {
@@ -403,7 +492,13 @@ span {
       }
 
       .btn-blog {
-            max-width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+      }
+      .parrafo-blog{
+            text-align: justify;
+            max-width: 90%;
+            margin: 0 auto;
       }
 }
 
@@ -495,18 +590,21 @@ span {
 }
 
 @media screen and (max-width:480px) {
-      .contact-form{
+      .contact-form {
             max-width: 100%;
 
       }
-      .campo{
+
+      .campo {
             display: flex;
             flex-direction: column;
       }
-      .campo label{
+
+      .campo label {
             flex-basis: 0;
       }
-      .campo input{
+
+      .campo input {
             flex: 0;
       }
 }
@@ -516,44 +614,19 @@ span {
 
 /* media queries */
 
-@media screen and (max-width: 768px){
-      .contenedor-nav .nav{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-      }
-      .div-grid{
-            display: grid;
-            grid-template-columns: 1fr;
-      }
-      .product-list{
-            display: flex;
-            flex-direction: column;
-      }
-      .prd:nth-child(1){
-            grid-template-columns: none;
-           
-      }
+@media screen and (max-width: 480px) {
 
-      .p1 img{
-            display: block;
-      }
-      .texto-producto{
 
-      }
-      .footer-grid{
+      .footer-grid {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2,1fr);
+            grid-template-rows: repeat(2, 1fr);
             text-align: center;
       }
-      .footer-list:nth-child(3){
-            
+
+      .footer-list:nth-child(3) {
+
             grid-column: 1 / 3;
-       text-align: center;
+            text-align: center;
       }
-      .maingrid{
-            display: flex;
-            flex-direction: column;
-      }
-      
+
 }
